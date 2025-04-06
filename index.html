@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--! TODO: <div class="loader-container">
+        <div class="loader"></div>
+    </div> -->
+
+    <!--! FIXME: <button id="themeToggle">
+        <img src="./images/moon.png" alt="Theme Icon" id="themeIcon">
+    </button> -->
+
+    <header class="header mt-4">
+        <nav class="container d-flex justify-content-between">
+            <a href="./index.html" class="header__logo">
+                <img src="./images/logo.svg" alt="logo" class="header__banner">
+            </a>
+            <ul class="header__list d-flex gap-5">
+                <li class="header__item">
+                    <a href="#" class="text-uppercase text-dark">all products</a>
+                </li>
+                <li class="header__item d-flex justify-content-center">
+                    <a href="#" class="text-uppercase text-dark">Solutions</a>
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="text-uppercase text-dark">About</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="text-uppercase text-dark">Support</a>
+                </li>
+            </ul>
+
+            <div class="header__icons d-flex gap-2">
+                <button class="">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+                <button class="">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero vh-100 d-flex justify-content-center align-items-center">
+            <div id="carouselExampleDark" class="container rounded-4 bg-light  carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators d-flex gap-3">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                        class="active bg-dark w-25 text-dark" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        class="bg-dark w-25" aria-current="true" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        class="bg-dark w-25" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner px-5">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="text-start ms-5 ps-5">
+                                    <h1>
+                                        The new phones are here take a look.
+                                    </h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.
+                                    </p>
+                                    <button class="btn border border-black text-black rounded-pill px-4 py-2"
+                                        style="width: 170px; height: 50px;">
+                                        Explore
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./images/iphone.png" class="d-block mx-auto img-fluid"
+                                    style="width: 647px; height: 550px;" alt="Rasm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="text-start ms-5 ps-5">
+                                    <h1>
+                                        The new phones are here take a look.
+                                    </h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.
+                                    </p>
+                                    <button class="btn border border-black text-black rounded-pill px-4 py-2"
+                                        style="width: 170px; height: 50px;">
+                                        Explore
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./images/iphone.png" class="d-block mx-auto img-fluid"
+                                    style="width: 647px; height: 550px;" alt="Rasm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="text-start ms-5 ps-5">
+                                    <h1>
+                                        The new phones are here take a look.
+                                    </h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                                        aliquam, tempor. Faucibus morbi turpis.
+                                    </p>
+                                    <button class="btn border border-black text-black rounded-pill px-4 py-2"
+                                        style="width: 170px; height: 50px;">
+                                        Explore
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./images/iphone.png" class="d-block mx-auto img-fluid"
+                                    style="width: 647px; height: 550px;" alt="Rasm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev position-absolute start-0" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="fs-2 fw-bold text-dark">&#10094;</span>
+                    <span class="visually-hidden">Oldingi</span>
+                </button>
+                <button class="carousel-control-next position-absolute end-0" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="fs-2 fw-bold text-dark">&#10095;</span>
+                    <span class="visually-hidden">Keyingi</span>
+                </button>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="container my-5">
+                <h1 class="text-center">
+                    Shop our latest offers and categories
+                </h1>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam,<br>
+                    tempor. Faucibus morbi turpis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="card mb-3">
+                            <div class="d-flex flex-column justify-content-center">
+                                <img src="./images/laptop.png" class="card-img-top" alt="Laptop">
+                                <div class="card-body text-end">
+                                    <small class="text-muted">Laptops</small>
+                                    <h2 class="card-title">True Laptop Solution</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img src="./images/iwatch.png" class="card-img-top" alt="Watch">
+                                <div class="card-body text-center">
+                                    <small class="text-muted">Watch</small>
+                                    <h2 class="card-title">Not just stylish</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex">
+                        <div class="card w-100 d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center gap-5">
+                                <img src="./images/ipxone.png" class="card-img-top" alt="Phone">
+                                <div class="card-body text-center">
+                                    <small class="text-muted">Phones</small>
+                                    <h2 class="card-title">Your day to day life</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex">
+                        <div class="card w-100 d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center gap-5">
+                                <div class="card-body text-center">
+                                    <small class="text-muted">Tablet</small>
+                                    <h2 class="card-title">Empower your work</h2>
+                                </div>
+                                <img src="./images/ipad.png" class="img-fluid" alt="Tablet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sale vh-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <h1 class="text-center">
+                    Save on our most selled items.
+                </h1>
+                <p class="text-center">
+                    Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-5">
+                    <div class="d-flex flex-column gap-3">
+                        <img src="./images/macpro.png" alt="" class="">
+                        <div class="d-flex flex-column gap-1 text-center">
+                            <h4 class="">
+                                MacBook Pro 13
+                            </h4>
+                            <p class="">
+                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit...
+                            </p>
+                            <strong>$ 1,200.00 USD</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <img src="./images/swatch.png" alt="" class="">
+                        <div class="d-flex flex-column gap-1 text-center">
+                            <h4 class="">
+                                Smart Galaxy Watch 3
+                            </h4>
+                            <p class="">
+                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit...
+                            </p>
+                            <strong>$ 199.00 USD</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <img src="./images/macair.png" alt="" class="">
+                        <div class="d-flex flex-column gap-1 text-center">
+                            <h4 class="">
+                                MacBook Air M1
+                            </h4>
+                            <p class="">
+                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit...
+                            </p>
+                            <strong>$ 1,009.00 USD</strong>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <img src="./images/lpad.png" alt="" class="">
+                        <div class="d-flex flex-column gap-1 text-center">
+                            <h4 class="">
+                                iPad
+                            </h4>
+                            <p class="">
+                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit...
+                            </p>
+                            <strong>$ 610.00 USD</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="see vh-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <h1 class="text-center">
+                    See the best around here
+                </h1>
+                <p class="text-center">
+                    Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                </p>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column align-items-center gap-3 bg-light rounded-3"
+                        style="width: 413px; height: 453px; padding: 19px 0;">
+                        <div class="text-center">
+                            <p class="">
+                                Smart light bulb pack
+                            </p>
+                            <h3 class="">
+                                Latest and gratest
+                            </h3>
+                        </div>
+                        <button class="btn border border-black rounded-pill" style="width: 190px; height: 50px;">
+                            Explore
+                        </button>
+                        <img src="./images/watch.png" alt="" class="">
+                    </div>
+                    <div class="d-flex flex-column  align-items-center gap-3 bg-light rounded-3"
+                        style="width: 413px; height: 453px; padding: 19px 0;">
+                        <div class="text-center">
+                            <p class="">
+                                Smart light bulb pack
+                            </p>
+                            <h3 class="">
+                                Best selling </h3>
+                        </div>
+                        <button class="btn border border-black rounded-pill" style="width: 190px; height: 50px;">
+                            Explore
+                        </button>
+                        <img src="./images/mix.png" alt="" class="">
+                    </div>
+                    <div class="d-flex flex-column  align-items-center gap-3 bg-light rounded-3"
+                        style="width: 413px; height: 453px; padding: 19px 0;">
+                        <div class="text-center">
+                            <p class="">
+                                Smart light bulb pack
+                            </p>
+                            <h3 class="">
+                                Every product </h3>
+                        </div>
+                        <button class="btn border border-black rounded-pill" style="width: 190px; height: 50px;">
+                            Explore
+                        </button>
+                        <img src="./images/2v1.png" alt="" class="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ideas vh-100 d-flex justify-content-center align-items-center">
+            <div class="container d-grid place-items-center gap-5">
+                <div class="text-center">
+                    <h1 class="text-center">
+                        Ideas have a place here
+                    </h1>
+                    <p class="text-center">
+                        Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    </p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center  gap-4">
+                    <img src="./images/frame.png" alt="" class="">
+                    <div class="d-grid gap-5">
+                        <h4 class="">
+                            We Make It Easy To Find The Great Design Talent, Easier...
+                        </h4>
+                        <h4 class="">
+                            Road Design Handbook For The International Road...
+                        </h4>
+                        <h4 class="">
+                            The Best Kept Secrets About Creative People
+                        </h4>
+                        <h4 class="">
+                            We Make It Easy To Find The Great Design Talent, Easier...
+                        </h4>
+                    </div>
+                </div>
+                <button class="ideas__btn d-flex justify-content-center gap-2">
+                    See all
+                    <span class="material-symbols-outlined">
+                        arrow_outward
+                    </span>
+                </button>
+            </div>
+        </section>
+        <section class="search vh-100 d-flex justify-content-center align-items-center">
+            <div class="container d-flex flex-column align-items-center gap-4">
+                <h1 class="text-center">
+                    Looking for anything else?
+                </h1>
+                <div class="input-group w-50 rounded-pill bg-white overflow-hidden shadow">
+                    <span class="input-group-text bg-white border-0">
+                        <span class="material-icons text-secondary material-symbols-outlined">search</span>
+                    </span>
+                    <input type="text" class="form-control border-0 shadow-none bg-light" placeholder="Search keyword">
+                </div>
+                <div class="mt-3 d-flex flex-wrap gap-2">
+                    <button class="btn shadow rounded-pill px-3 py-1">iPhone</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">Charger</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">Gift</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">Google Pixel 3</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">Keyboard</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">13 Pro Max</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">iPhone 12</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">Laptop</button>
+                    <button class="btn shadow rounded-pill px-3 py-1">Mobile</button>
+                </div>
+            </div>
+        </section>
+        <section class="miss vh-100 d-flex justify-content-center align-items-center">
+            <div class="container rounded-4 bg-light py-5 d-flex flex-column align-items-center gap-5">
+                <div class="text-center">
+                    <h1 class="">
+                        Never miss a thing
+                    </h1>
+                    <p class="">
+                        Sign up for texts to be notified about our best offers on the perfect gifts.
+                    </p>
+                </div>
+                <img src="./images/3v1.png" alt="" class="">
+                <form class="input-group rounded-pill border border-black" style="width: 400px;">
+                    <input type="email" class="form-control border-0 rounded-start-pill px-4" placeholder="Your email"
+                        required>
+                    <button class="btn btn-dark rounded-end-pill px-4">Sign up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-light text-light py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-2">
+                    <a href="./index.html">
+                        <img src="./images/banner.svg" alt="" class="">
+                    </a>
+                    <p class="pt-3">
+                        Sign up for texts to be notified about our best offers on the perfect gifts.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-dark">All products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Phone</a></li>
+                        <li><a href="#" class="text-dark">Watch</a></li>
+                        <li><a href="#" class="text-dark">Tablet</a></li>
+                        <li><a href="#" class="text-dark">Laptop</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-dark">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">About</a></li>
+                        <li><a href="#" class="text-dark">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-dark">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Style Guide</a></li>
+                        <li><a href="#" class="text-dark">Licensing</a></li>
+                        <li><a href="#" class="text-dark">Change Log</a></li>
+                        <li><a href="#" class="text-dark">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-dark">Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Instagram</a></li>
+                        <li><a href="#" class="text-dark">Facebook</a></li>
+                        <li><a href="#" class="text-dark">LinkedIn</a></li>
+                        <li><a href="#" class="text-dark">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-dark">
+            <div class="d-flex justify-content-between">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <strong class="text-dark d-flex">
+                        Made By:
+                        <span class="text-dark d-flex">
+                            Azwedo
+                            <span class="material-symbols-outlined">
+                                arrow_outward
+                            </span>
+                        </span>
+                    </strong>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <strong class="text-dark d-flex">
+                        Made By:
+                        <span class="text-dark d-flex">
+                            Azwedo
+                            <span class="material-symbols-outlined">
+                                arrow_outward
+                            </span>
+                        </span>
+                    </strong>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/general.js"></script>
+</body>
+
+</html>
